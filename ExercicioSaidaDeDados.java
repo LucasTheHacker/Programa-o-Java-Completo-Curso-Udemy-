@@ -7,6 +7,7 @@ public class ExercicioSaidaDeDados {
         String product1Var = "Computer";
         String product2Var =  "Office Desk";
 
+        
         int ageVar = 30;
         int codeVar = 5290;
         char genderVar = 'F';  // Aspas simples
