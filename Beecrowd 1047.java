@@ -23,7 +23,13 @@ public class Main {
 		if (horaFinal == horaInicial && minutoFinal == minutoInicial) {
 			System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
 		}
-		else if (horaInicial <= horaFinal && minutoFinal >= minutoInicial) { //Mesmo dia
+		else if (horaInicial == horaFinal && minutoInicial < minutoFinal) { //Mesmo dia e mesma hora
+			temp = (horaFinal*60 + minutoFinal) - (horaInicial*60 +minutoInicial);
+			horas = (int) temp/60; //CASTING
+			minutos = (int) temp%60; //CASTING
+			System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", horas, minutos);
+		}
+		else if (horaInicial < horaFinal) { //Mesmo dia e horas diferentes
 			temp = (horaFinal*60 + minutoFinal) - (horaInicial*60 +minutoInicial);
 			horas = (int) temp/60; //CASTING
 			minutos = (int) temp%60; //CASTING
