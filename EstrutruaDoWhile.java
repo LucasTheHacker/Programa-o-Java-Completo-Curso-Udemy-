@@ -1,3 +1,4 @@
+//Executa o que está dentro do do ao menos uma vez.
 import java.util.Scanner;
 import java.util.Locale;
 public class Main {
