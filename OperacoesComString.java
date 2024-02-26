@@ -27,7 +27,7 @@ public class Main {
 
 		String frase = "Lucas Gabriel da Silva Batista";
 
-		String[] vetor = frase.split(" "); //Separe com base nos espaços e armazene na lista de strings "vetor"
+		String[] vetor = frase.split(" "); //Separe com base nos espaços e armazene no vetor de strings "vetor"
 		String word0 = vetor[0];
 		String word1 = vetor[1];
 		String word2 = vetor[2];
