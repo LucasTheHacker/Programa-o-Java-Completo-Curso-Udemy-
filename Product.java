@@ -1,25 +1,28 @@
 package entities;
 
 public class Product {
+    private String name;
+    private Double price;
+    public Integer quantity;
 
-    public String name;
-    public double price;
-    public int quantity;
-
-    public double totalValueInStock(){
-        return price*quantity;
+    public Product(String name, double price) {
+        setName(name);
+        setPrice(price);
     }
 
-    public void addProducts(int quantity){
-        this.quantity += quantity;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void removeProducts(int quantity) {
-        this.quantity -= quantity;
+    public String getName(int i) {
+        return name;
     }
 
-    public String toString() { //sobreposição
-        return name + ", $" + String.format("%.2f", price) + ", " + quantity + " units, Total: $ " + totalValueInStock();
+    public void setPrice(double price) {
+        this.price = price;
     }
-    
+
+    public double getPrice() {
+        return price;
+    }
 }
